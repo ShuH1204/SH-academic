@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Empty Cells</title>
+		<style type="text/css">
+			td {
+				border: 1px solid #0088dd;
+				padding: 15px;}
+			table.one {
+				empty-cells: hide;border-spacing:0px;border-collapse:collapse}
+			table.two {
+				empty-cells: hide;}
+				table.three {empty-cells:inherit}
+		</style>
+	</head>
+	<body>
+		<table class="one">
+			<tr>
+				<td>1</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td><table class="three">
+			<tr>
+				<td>1</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td></td>
+			</tr>
+		</table></td>
+			</tr>
+		</table>
+		<table class="two">
+			<tr>
+				<td>1</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td></td>
+			</tr>
+		</table>
+		<p>&nbsp;</p>
+		<table width="200" border="1">
+		  <tr>
+		    <td></td>
+		    <td></td>
+		    <td></td>
+	      </tr>
+		  <tr>
+		    <td></td>
+		    <td></td>
+		    <td></td>
+	      </tr>
+		  <tr>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+	      </tr>
+    </table>
+		<p>&nbsp;</p>
+    </body>
+</html>

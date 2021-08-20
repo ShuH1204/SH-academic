@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hover Active Focus</title>
+		<style type="text/css">
+			input {
+				padding: 6px 12px 6px 12px;
+				border: 1px solid #665544;
+				color: #ffffff;}
+			input.submit:hover {
+				background-color:red;color:blue}
+			input.submit:active {
+				background-color: blue;color:white;font-style:italic}
+			input.text {
+				color: #ff0000;background-color:blue;width:300px}
+			input.text:focus {
+				color:#0000ff;background-color:yellow;font-size:48pt;font-style:italic;width:500px;transition:width 10s;}
+				input[class$="o"] { border:5px solid red    }
+		</style>
+	</head>
+	<body>
+		<form>
+			<input type="text" class="text demo" value="Enter email address..." />
+            <input type="text" />
+			<input type="submit" class="tubmit text" name="btn1" />
+            <input type="reset" />
+		</form>
+	</body>
+</html>
