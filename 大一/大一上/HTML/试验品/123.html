@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<script language="javascript">
+	var color_array=new Array("blue","yellow","red","violet","black","green","pink");
+	var i=0;
+	function change_color()
+		{document.bgColor=color_array[i];
+		 i++;
+		 if (i==7)i=0;
+		}
+	</script>
+</head>
+
+<body><script language="javascript">
+	setInterval("change_color()",60);
+	</script>
+	<h1 align="center">我好饿</h1>
+</body>
+</html>

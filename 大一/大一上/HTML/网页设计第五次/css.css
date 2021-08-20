@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-image: url(西南大学1.jfif)}
+h1{font-size::72pt;color:red}
+p{font-style: italic;color:yellow}
+*{border: 1px solid blue}
+h1 {text-align:center}

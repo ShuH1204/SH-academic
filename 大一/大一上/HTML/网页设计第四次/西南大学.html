@@ -1,0 +1,49 @@
+<html>
+<HEAD>
+<TITLE>西南大学</TITLE>
+<META content="text/html; charset=gb2312" http-equiv=Content-Type>
+<STYLE type=text/css>
+#demo a {
+    width:100%;
+    overflow:hidden;
+    font:12px/16px tahoma;
+    display:block;
+    text-decoration:none;
+    margin:2px;
+    color:#4a551c;
+    padding-left:2px;
+    text-align:left;
+}
+#demo a:hover {
+    color:#ff6600;
+}
+</STYLE>
+</HEAD>
+<body>
+<div id="demo" style="overflow:hidden;height:400px;width:250px;border:1px solid #dde5bc;">
+    <div id="demo1"> 
+        西南大学（Southwest University）简称西大，坐落于重庆市，是中华人民共和国教育部直属高校，由教育部、农业农村部与重庆市人民政府共建，是世界一流学科建设高校，位列211工程、985工程优势学科创新平台，入选111计划、2011计划、卓越农林人才教育培养计划、卓越教师培养计划、百校工程、国家建设高水平大学公派研究生项目、国家大学生文化素质教育基地，开办师范生免费教育的7所高校之一，全国自主选拔录取改革试点高校，中国政府奖学金来华留学生接收院校，重庆市大学联盟创始成员。
+西南大学由原教育部直属西南师范大学与原农业部直属西南农业大学于2005年合并而成。原两校毗邻而建，均溯源于1906年建立的川东师范学堂。1936年更名为四川省立教育学院。1950年，四川省立教育学院师范、农学相关系科分别与1940年创办的国立女子师范学院、1946年创办的私立相辉文法学院等合并建立西南师范学院、西南农学院。1985年，两校分别更名为西南师范大学、西南农业大学。此后，重庆轻工业职工大学、四川畜牧兽医学院、中国农业科学院柑桔研究所相继并入。
+截至2018年12月，学校占地9000余亩，建有北碚校区、荣昌校区、西塔学院；拥有11个学部，3个附属医院；设有36个学院，105个本科专业；有22个博士后科研流动站、28个一级学科博士学位授权点、51个一级学科硕士学位授权点；专任教师2968人；在校学生5万余人，其中普通本科生近4万人，硕士、博士研究生11000余人，留学生2000余人。
+    </div>
+    <div id="demo2"></div>
+</div>
+<script>
+var speed=40
+var demo=document.getElementById("demo");
+var demo2=document.getElementById("demo2");
+var demo1=document.getElementById("demo1");
+demo2.innerHTML=demo1.innerHTML
+function Marquee(){
+    if(demo2.offsetTop-demo.scrollTop<=0)
+        demo.scrollTop-=demo1.offsetHeight
+    else{
+        demo.scrollTop++
+    }
+}
+var MyMar=setInterval(Marquee,speed)
+demo.onmouseover=function() {clearInterval(MyMar)}
+demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+</script>
+</body>
+</html>
